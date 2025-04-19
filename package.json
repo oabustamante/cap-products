@@ -1,8 +1,8 @@
 {
   "name": "product_catalog",
   "version": "1.0.0",
-  "description": "A simple CAP project.",
-  "repository": "<Add your repository here>",
+  "description": "Cloud Application Programming Model",
+  "repository": "https://github.com/oabustamante/cap-products.git",
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
