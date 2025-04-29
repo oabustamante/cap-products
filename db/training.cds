@@ -1,6 +1,9 @@
 namespace com.training;
 
-using {cuid} from '@sap/cds/common';
+using {
+    cuid,
+    Country
+} from '@sap/cds/common';
 
 type EmailAddresses_01 : array of {
     kind  : String;
@@ -61,3 +64,14 @@ entity StudentCourse : cuid {
     Student : Association to Student;
     Course  : Association to Course;
 };
+
+entity Orders {
+    key ClientEmail : String(65);
+        FirstName   : String(30);
+        LastName    : String(30);
+        CreatedOn   : Date;
+        Reviewed    : Boolean;
+        Approved    : Boolean;
+        Country     : Country;
+        Status      : String(1);
+}
