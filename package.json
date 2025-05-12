@@ -25,6 +25,12 @@
     "watch-product": "cds watch --open product/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "cds": {
+    "i18n": {
+      "default_language": "en",
+      "folders": [
+        "_i18n"
+      ]
+    },
     "protocols": {
       "graphql": { "path": "/graphql", "impl": "@cap-js/graphql" }
     },
